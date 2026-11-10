@@ -22,6 +22,20 @@ Read SKILL.md in this repo in full, then follow it strictly to clean up my Mac d
 Scan only first, and list what you find in three tiers: safe to delete, ask item by item, do not touch. Do not delete any file without my explicit approval.
 ```
 
+## Why it beats traditional cleanup tools
+
+This skill is what I learned from half a year of cleaning up my own Mac. Before writing it I used cleanup tools like Tencent Lemon and Mole, but they only clean the surface. Deeper directories and other space hogs are hard for them to reach.
+
+1. **No fixed path list.** Traditional tools only scan the folders they know about, so anything outside that list stays invisible no matter how big it is. This skill follows the size down, level by level, wherever the space actually is.
+2. **Knows dev machines.** `node_modules`, build folders, the Go build cache, Docker images, Claude Code session leftovers in `/private/tmp`, and `.git` bloated by AI checkpoint refs are things traditional tools mostly don't recognize.
+3. **Explains every item.** Path, size, why it's safe to delete, and what deleting it costs, so you choose, instead of one "Clean" button.
+4. **Tells caches from artifacts.** Caches can be rebuilt; installer packages, `.xcarchive` files, and exported reports may be the only copy on the machine, so they are listed separately for you to decide.
+5. **Won't delete recklessly.** Nothing is deleted without your OK. It checks whether a process is using something first, never uses sudo, and verifies item by item afterwards: what should be gone is gone, what should stay is still there.
+6. **More honest numbers.** It reports space actually freed by the system and warns that hard links can inflate sizes, instead of double-counting APFS clones and hard links like some cleanup apps.
+7. **Fixes the cause, not just the symptom.** It explains why the space comes back three days later and how to stop it, for example by moving Claude Code's temp directory somewhere that gets cleaned regularly.
+8. **Handles the Claude Desktop Cowork VM.** Macs with Claude Desktop can carry a sandbox image of about 10 GB that may re-download the same day you delete it. The skill checks whether it's in use, then gives you the official config switch to turn it off and states the cost: Cowork stops working on that machine.
+9. **Free and open source.** It runs on the AI you already use, with no extra cleanup app to install.
+
 ## Hidden space hogs it looks for
 
 On a Mac used for AI-assisted coding, these are easy to miss:
@@ -68,7 +82,7 @@ Just say it in plain language, for example:
 
 It will first report what it found, give you the A / B / C list, and wait for you to name what to delete.
 
-If it helps, a Star is very welcome. Better cleanup tricks are welcome as PRs too.
+If it helps, a Star is very welcome. More tips are welcome as PRs too.
 
 ## License
 
