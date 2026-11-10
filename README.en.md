@@ -12,13 +12,13 @@ Don't want to install by hand? Paste either prompt into your AI (Claude Code, Co
 
 ```text
 Install this Mac disk cleanup skill for me: https://github.com/foamzou/mac-disk-cleanup
-Download SKILL.md from the repo into a mac-disk-cleanup folder in your personal skills directory (Claude Code: ~/.claude/skills/mac-disk-cleanup/, Codex: ~/.agents/skills/mac-disk-cleanup/). Tell me where you installed it, and don't start cleaning yet.
+Download SKILL.md from the repo into a mac-disk-cleanup folder in your personal skills directory, then run it for me.
 ```
 
 **Option 2: use it once, no install**
 
 ```text
-Read this Mac disk cleanup guide in full, then follow it strictly to clean up my disk: https://raw.githubusercontent.com/foamzou/mac-disk-cleanup/main/SKILL.md
+Read SKILL.md in this repo in full, then follow it strictly to clean up my Mac disk: https://github.com/foamzou/mac-disk-cleanup
 Scan only first, and list what you find in three tiers: safe to delete, ask item by item, do not touch. Do not delete any file without my explicit approval.
 ```
 
@@ -67,6 +67,8 @@ Just say it in plain language, for example:
 - Clean up my Mac disk
 
 It will first report what it found, give you the A / B / C list, and wait for you to name what to delete.
+
+If it helps, a Star is very welcome. Better cleanup tricks are welcome as PRs too.
 
 ## License
 

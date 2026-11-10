@@ -12,13 +12,13 @@
 
 ```text
 帮我安装这个 Mac 磁盘清理 skill：https://github.com/foamzou/mac-disk-cleanup
-把仓库里的 SKILL.md 下载到你的个人 skill 目录下的 mac-disk-cleanup 文件夹（Claude Code 是 ~/.claude/skills/mac-disk-cleanup/，Codex 是 ~/.agents/skills/mac-disk-cleanup/）。装好后告诉我装在了哪里，先不要开始清理。
+把仓库里的 SKILL.md 下载到你的个人 skill 目录下的 mac-disk-cleanup 文件夹，装好之后帮我运行。
 ```
 
 **方式二：不安装，只用这一次**
 
 ```text
-先完整读一遍这份 Mac 磁盘清理指南，然后严格按它帮我清理磁盘：https://raw.githubusercontent.com/foamzou/mac-disk-cleanup/main/SKILL.md
+先完整读一遍这个仓库里的 SKILL.md，然后严格按它帮我清理 Mac 磁盘：https://github.com/foamzou/mac-disk-cleanup
 先只扫描，按「放心删、逐项问、别动」三档给我列清单。没有我明确同意，任何文件都不要删。
 ```
 
@@ -67,6 +67,8 @@ cp -R mac-disk-cleanup ~/.agents/skills/mac-disk-cleanup
 - 清一下 mac 磁盘
 
 它会先摸现状、分档给清单，等你点名要删哪些，再动手。
+
+觉得有用的话，欢迎点个 Star。有更好的清理技巧，也欢迎提 PR。
 
 ## 许可
 
