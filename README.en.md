@@ -4,6 +4,24 @@ A Mac disk cleanup skill for Claude Code and Codex. macOS only.
 
 When the disk is full, it does not scan a fixed list of paths. It follows the largest directories down until it can tell what is actually taking space, then groups the findings into three tiers for you to pick from: A (safe to delete), B (ask item by item), and C (do not touch). It will not delete anything unless you explicitly say yes.
 
+## Copy-paste prompts
+
+Don't want to install by hand? Paste either prompt into your AI (Claude Code, Codex, or any agent that can read the web and run commands).
+
+**Option 1: install it as a skill**
+
+```text
+Install this Mac disk cleanup skill for me: https://github.com/foamzou/mac-disk-cleanup
+Download SKILL.md from the repo into a mac-disk-cleanup folder in your personal skills directory (Claude Code: ~/.claude/skills/mac-disk-cleanup/, Codex: ~/.agents/skills/mac-disk-cleanup/). Tell me where you installed it, and don't start cleaning yet.
+```
+
+**Option 2: use it once, no install**
+
+```text
+Read this Mac disk cleanup guide in full, then follow it strictly to clean up my disk: https://raw.githubusercontent.com/foamzou/mac-disk-cleanup/main/SKILL.md
+Scan only first, and list what you find in three tiers: safe to delete, ask item by item, do not touch. Do not delete any file without my explicit approval.
+```
+
 ## Hidden space hogs it looks for
 
 On a Mac used for AI-assisted coding, these are easy to miss:

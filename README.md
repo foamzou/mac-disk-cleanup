@@ -4,6 +4,24 @@
 
 磁盘满了的时候，它不会按一张写死的路径清单去扫，而是跟着体积一层层往下钻，把真正占地方的东西找出来，再分成三档让你挑：A 放心删、B 逐项问、C 别动。你不明确点头，它一个文件都不删。
 
+## 复制这段 prompt 就能用
+
+不想手动装？把下面任意一段复制给你的 AI（Claude Code、Codex 等能读网页、能跑命令的都行）。
+
+**方式一：安装成 skill，以后随时用**
+
+```text
+帮我安装这个 Mac 磁盘清理 skill：https://github.com/foamzou/mac-disk-cleanup
+把仓库里的 SKILL.md 下载到你的个人 skill 目录下的 mac-disk-cleanup 文件夹（Claude Code 是 ~/.claude/skills/mac-disk-cleanup/，Codex 是 ~/.agents/skills/mac-disk-cleanup/）。装好后告诉我装在了哪里，先不要开始清理。
+```
+
+**方式二：不安装，只用这一次**
+
+```text
+先完整读一遍这份 Mac 磁盘清理指南，然后严格按它帮我清理磁盘：https://raw.githubusercontent.com/foamzou/mac-disk-cleanup/main/SKILL.md
+先只扫描，按「放心删、逐项问、别动」三档给我列清单。没有我明确同意，任何文件都不要删。
+```
+
 ## 它会盯哪些容易被忽略的大户
 
 用 AI 写代码的 Mac 上，这几类特别容易悄悄占空间：
